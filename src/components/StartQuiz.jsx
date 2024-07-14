@@ -1,6 +1,9 @@
 import React, { useState, useCallback, memo } from "react";
 import Cookies from "js-cookie";
 import Navbar from "./Navbar";
+import icon5 from "../assets/media/icon5.png";
+import link1 from "../assets/media/link1.svg";
+import link2 from "../assets/media/link2.svg";
 
 const LogoSVG = memo(() => (
   <div className="logo-svg">
@@ -61,7 +64,7 @@ const Footer = memo(() => (
       </div>
       <div className="start-quiz-footer-bottom flex">
         <div className="accessibility-box flex">
-          <img src="/src/assets/media/icon5.png" alt="Accessibility icon" />
+          <img src={icon5} alt="Accessibility icon" />
           <span>
             Accessibility
             <br /> & Inclusion
@@ -70,10 +73,10 @@ const Footer = memo(() => (
         <div className="start-quiz-copyright">© 2024 Quizizz Inc.</div>
         <div className="start-quiz-app-links flex">
           <a href="https://share.quizizz.com/nz4P08MhCM">
-            <img src="/src/assets/media/link2.svg" alt="App link 1" />
+            <img src={link2} alt="App link 1" />
           </a>
           <a href="https://share.quizizz.com/EBAH8OlhCM">
-            <img src="/src/assets/media/link1.svg" alt="App link 2" />
+            <img src={link1} alt="App link 2" />
           </a>
         </div>
       </div>

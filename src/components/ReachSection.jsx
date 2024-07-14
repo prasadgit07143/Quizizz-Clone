@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import ReachCover from "../assets/media/reach1.webp";
 
 const ReachSection = React.memo(() => {
   return (
@@ -16,7 +17,7 @@ const ReachSection = React.memo(() => {
         </button>
       </div>
       <div className="reach-section-second | flex">
-        <img src="/src/assets/media/reach1.webp" alt="Reach illustration" />
+        <img src={ReachCover} alt="Reach illustration" />
       </div>
     </section>
   );

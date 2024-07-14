@@ -1,4 +1,7 @@
 import React from "react";
+import user1 from "../assets/media/user1.webp";
+import user2 from "../assets/media/user2.webp";
+import user3 from "../assets/media/user3.webp";
 
 const Testimonial = React.memo(
   ({ image, name, role, review, highlightColor }) => (
@@ -30,7 +33,7 @@ const Testimonial = React.memo(
 const TestimonialSection = () => {
   const testimonials = [
     {
-      image: "/src/assets/media/user1.webp",
+      image: user1,
       name: "Yvette Switzer",
       role: "4th Grade Teacher",
       review:
@@ -38,7 +41,7 @@ const TestimonialSection = () => {
       highlightColor: "#d4546d",
     },
     {
-      image: "/src/assets/media/user2.webp",
+      image: user2,
       name: "James Newman",
       role: "Sr. Manager of Academic Instructional Technology",
       review:
@@ -46,7 +49,7 @@ const TestimonialSection = () => {
       highlightColor: "#2d9da6",
     },
     {
-      image: "/src/assets/media/user3.webp",
+      image: user3,
       name: "Shallamar Goodwin-Richards",
       role: "High School Math Teacher",
       review:

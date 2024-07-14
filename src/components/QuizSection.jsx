@@ -5,6 +5,7 @@ import QuizQuestion from "./QuizQuestion";
 import QuizSectionTopBar from "./QuizSectionTopBar";
 import QuizSectionWelcome from "./QuizSectionWelcome";
 import QuizSummary from "./QuizSummary";
+import blBucketHat from "../assets/media/bl_bucket_hat.svg";
 
 const getInitialQuizState = (started) => ({
   started,
@@ -156,7 +157,7 @@ const QuizSection = () => {
         className={`quiz-section-bottom-wrapper${bgClass ? ` ${bgClass}` : ""}`}
       >
         <div className="quiz-section-bottom | flex">
-          <img src="/src/assets/media/bl_bucket_hat.svg" alt="User avatar" />
+          <img src={blBucketHat} alt="User avatar" />
           <p>
             {Cookies.get("nameOfUser")?.split(" ")[0] || ""}
             <br />

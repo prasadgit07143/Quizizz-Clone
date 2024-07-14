@@ -1,16 +1,22 @@
 import React from "react";
+import award1 from "../assets/media/award-1.webp";
+import award2 from "../assets/media/award-2.webp";
+import award3 from "../assets/media/award-3.webp";
+import award4 from "../assets/media/award-4.webp";
+import award5 from "../assets/media/award-5.webp";
+import award6 from "../assets/media/award-6.webp";
 
 const awards = [
-  { src: "/src/assets/media/award-1.webp", alt: "Award 1" },
-  { src: "/src/assets/media/award-2.webp", alt: "Award 2" },
-  { src: "/src/assets/media/award-3.webp", alt: "Award 3" },
+  { src: award1, alt: "Award 1" },
+  { src: award2, alt: "Award 2" },
+  { src: award3, alt: "Award 3" },
   {
-    src: "/src/assets/media/award-4.webp",
+    src: award4,
     alt: "Common Sense Award",
     id: "common-sense-logo",
   },
-  { src: "/src/assets/media/award-5.webp", alt: "Award 5" },
-  { src: "/src/assets/media/award-6.webp", alt: "Award 6" },
+  { src: award5, alt: "Award 5" },
+  { src: award6, alt: "Award 6" },
 ];
 
 const AwardsSection = () => (

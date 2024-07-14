@@ -15,6 +15,8 @@ import {
   faArrowRightFromBracket,
   faAngleUp,
 } from "@fortawesome/free-solid-svg-icons";
+import MainLogo from "../assets/media/main-logo.svg";
+import ExtensionBanner from "../assets/media/ai_extension_banner.webp";
 
 const NavItem = React.memo(({ icon, text, active, onClick }) => (
   <li className={active ? "list-item-active" : ""} onClick={onClick}>
@@ -64,7 +66,7 @@ const SideNav = React.memo(() => {
     <aside className="sidenav-wrapper font-opensans">
       <div className="sidenav-container | flex">
         <div className="sidenav-logo">
-          <img src="/src/assets/media/main-logo.svg" alt="Quizizz Logo" />
+          <img src={MainLogo} alt="Quizizz Logo" />
         </div>
         <div className="sidenav-profile-container | flex">
           <div className="sidenav-profile-info | flex">
@@ -112,10 +114,7 @@ const SideNav = React.memo(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="/src/assets/media/ai_extension_banner.webp"
-                alt="AI Extension Banner"
-              />
+              <img src={ExtensionBanner} alt="AI Extension Banner" />
             </a>
           </div>
         </div>

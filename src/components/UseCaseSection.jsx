@@ -1,8 +1,9 @@
 import React from "react";
+import icon3 from "../assets/media/icon3.svg";
 
 const UseCaseItem = React.memo(({ text }) => (
   <li>
-    <img src="/src/assets/media/icon3.svg" alt="Checkmark icon" />
+    <img src={icon3} alt="Checkmark icon" />
     <span>{text}</span>
   </li>
 ));

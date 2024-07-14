@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import S1Banner from "../assets/media/img1.png";
 
 const Button = React.memo(({ className, spanText, buttonText }) => (
   <button className={className}>
@@ -40,7 +41,7 @@ const Section1 = React.memo(() => (
         </div>
         <div className="s1-right">
           <div className="s1-banner">
-            <img src="/src/assets/media/img1.png" alt="Section 1 banner" />
+            <img src={S1Banner} alt="Section 1 banner" />
           </div>
         </div>
       </div>
