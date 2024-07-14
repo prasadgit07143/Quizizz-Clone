@@ -11,6 +11,7 @@ import fbLogo from "../assets/media/fb-logo-sign.png";
 import msLogo from "../assets/media/ms-logo-sign.png";
 import appleLogo from "../assets/media/apple-logo-sign.png";
 import othersLogo from "../assets/media/others-logo-sign.png";
+import signInCover from "../assets/media/signin-cover.png";
 
 const loginMethods = [
   { icon: phoneLogo, text: "Continue with Phone" },
@@ -107,7 +108,7 @@ const Login = ({ heading, para, bottomText, actionText, bottomPara }) => {
             </div>
           </div>
           <div className="login-second">
-            <img src="\src\assets\media\signin-cover.png" alt="Sign In Cover" />
+            <img src={signInCover} alt="Sign In Cover" />
           </div>
         </div>
       </section>
